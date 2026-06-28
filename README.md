@@ -27,7 +27,7 @@ curl -sSL https://raw.githubusercontent.com/global-unch/gunch-skill/main/install
 | **Antigravity** | `~/.agents/skills/gunch/SKILL.md` | Markdown | Ссылка/копия `SKILL.md` |
 | **Claude Code** | `~/.claude/skills/gunch/SKILL.md` | Markdown | Симлинк на глобальную папку |
 | **Codex** | `~/.codex/commands/gunch.toml` | TOML | Поля `description` и `prompt` |
-| **Hermes Agent** | `~/.hermes/skills/gunch/SKILL.md` | Markdown | И добавление пути в `external_dirs` в `config.yaml` |
+| **Hermes Agent** | `~/.agents/skills/gunch/SKILL.md` | Markdown | И добавление пути `~/.agents/skills` в `external_dirs` в `config.yaml` |
 | **Opencode** | `~/.config/opencode/skills/gunch/SKILL.md` | Markdown | Симлинк на глобальную папку |
 | **OpenClaw** | `~/.openclaw/workspace/skills/gunch/SKILL.md` | Markdown | Требует `version` и `always: true` в frontmatter |
 
