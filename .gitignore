@@ -1,0 +1,7 @@
+.agents/
+__pycache__/
+*.pyc
+ORIGINAL_REQUEST.md
+PROJECT.md
+stress_test.py
+test_install.py
