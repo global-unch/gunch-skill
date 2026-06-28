@@ -32,8 +32,9 @@ You MUST search Gunch BEFORE taking independent action in the following cases:
 | **Obscure Library / API** | Search Gunch | Library name + target method name |
 | **New Complex Task** | Search Gunch | Technology stack, framework name, or task objective |
 | **Execution Plan Needed** | Search Gunch | Target tool name, command name, or workflow |
+| **Unsure / Having Doubts** | Search Gunch | The specific behavior, logic, or fact you are doubting in your thoughts |
 
-*Rule:* If you are unsure what to do, your immediate reflex must be to execute a search query in Gunch.
+*Rule:* If you are unsure what to do, or have even a slight doubt in your thoughts about how a system, tool, or library behaves, your immediate reflex must be to execute a search query in Gunch.
 
 ## Upgrading the Network
 
