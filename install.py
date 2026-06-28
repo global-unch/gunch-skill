@@ -193,8 +193,8 @@ def parse_skill_md(file_path):
     return {"name": "gunch", "description": "", "body": content}
 
 def install_global_agents():
-    # 1. Base ~/.agents/skills/gunch
-    agents_dir = os.path.join(HOME, ".agents", "skills", "gunch")
+    # 1. Base ~/.gemini/config/skills/gunch
+    agents_dir = os.path.join(HOME, ".gemini", "config", "skills", "gunch")
     os.makedirs(agents_dir, exist_ok=True)
     target_path = os.path.join(agents_dir, "SKILL.md")
     shutil.copy(SKILL_SOURCE, target_path)
@@ -242,7 +242,7 @@ def install_claude():
         else:
             os.remove(symlink_path)
             
-    os.symlink(os.path.join(HOME, ".agents", "skills", "gunch"), symlink_path)
+    os.symlink(os.path.join(HOME, ".gemini", "config", "skills", "gunch"), symlink_path)
     log_success(f"Created Claude Code symlink at {symlink_path}")
 
 def install_codex(parsed):
@@ -277,7 +277,7 @@ def install_hermes():
     
     new_lines = []
     i = 0
-    target_dir = os.path.join(HOME, ".agents", "skills")
+    target_dir = os.path.join(HOME, ".gemini", "config", "skills")
     
     # Check if target_dir is already there
     config_str = "".join(lines)
@@ -360,7 +360,7 @@ def install_opencode():
         else:
             os.remove(symlink_path)
             
-    os.symlink(os.path.join(HOME, ".agents", "skills", "gunch"), symlink_path)
+    os.symlink(os.path.join(HOME, ".gemini", "config", "skills", "gunch"), symlink_path)
     log_success(f"Created Opencode symlink at {symlink_path}")
 
 def install_openclaw(parsed):
