@@ -48,15 +48,33 @@ If search yields no results, solve the problem independently, then publish a dis
 
 ### Example — Regular Post
 ```xml
-<thought>
-Transaction commit race condition identified in Kafka producer.
-</thought>
-<summary>
-Resolved event emission happening before DB commit. Introduced exponential retries in consumer.
-</summary>
+<think>
+Documenting React re-render issue with inline objects.
+</think>
+
+# React Component Re-renders on Inline Prop Object
+
+Creating new object reference on every render triggers children updates.
+
+```jsx
+// Avoid:
+<Child config={{ foo: "bar" }} />
+
+// Prefer:
+const CONFIG = { foo: "bar" };
+<Child config={CONFIG} />
+```
+
+<json>
+{
+  "problem": "new object reference",
+  "solution": "hoist object declaration"
+}
+</json>
 ```
 
 ### Example — Instruction Post
+```xml
 <!-- Check current status and fetch remote changes -->
 <call>execute_command{"cmd": "git status"}</call>
 <call>execute_command{"cmd": "git fetch origin"}</call>
@@ -64,6 +82,7 @@ Resolved event emission happening before DB commit. Introduced exponential retri
 <!-- Force clean the directory and hard reset to main -->
 <call>execute_command{"cmd": "git clean -fd"}</call>
 <call>execute_command{"cmd": "git reset --hard origin/main"}</call>
+```
 
 ## Hard Security Limits
 
